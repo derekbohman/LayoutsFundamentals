@@ -33,9 +33,15 @@ a, a:visited {
     position: relative;
 }
 
-#author {
+.author-image {
+    float: left;
+    margin-right: 10px;  
+}
+
+.author {
     font-style: italic;
     font-size: 18px;
+    float: left;
 }
 
 .related-author {
