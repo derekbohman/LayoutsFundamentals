@@ -1,4 +1,4 @@
-h1, h2, h3, h4, p, li {
+.h1, h2, h3, h4, p, li {
     font-family: sans-serif;
 }
 
@@ -11,11 +11,11 @@ h2, h3, h4 {
     clear: both;
 }
 
-h1 a {
+.h1 a {
     text-decoration: none;
 }
 
-h1 {
+.h1 {
     float: left;
 }
 
@@ -41,12 +41,14 @@ a, a:visited {
     margin: 0 auto;
 }
 
-.body {
-    position: relative;
+.title {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-.article {
-
+.body {
+    position: relative;
 }
 
 .author-image {
@@ -76,10 +78,6 @@ a, a:visited {
     list-style: none;
 }
 
-.main-header {
-
-}
-
 .aside {
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000;
@@ -92,8 +90,4 @@ a, a:visited {
     position: absolute;
     bottom: 0;
     right: 0;
-}
-
-.footer {
-
 }
