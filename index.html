@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="head">
-    <link href="index.css" rel="stylesheet" />
     <meta charset="UTF-8" />
+    <link href="index.css" rel="stylesheet" />
+
     <title class="title">The Basic Language of the Web: HTML</title>
   </head>
   <body class="body">
     <div class="container">
-      <header class="main-header">
-        <h1 class="h1"><a href="index.html">📘 The Code Magazine</a></h1>
-        <nav class="nav-bar">
+      <header class="main-header clearfix">
+        <h1>📘 The Code Magazine</h1>
+        <nav class="nav">
           <a href="blog.html">Blog</a>
           <a href="challenge1.html">Challenges</a>
-          <a href="#">Flexbox</a>
-          <a href="#">CSS Grid</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">CSS Grid</a>
         </nav>
-        <div class="clear"></div>
       </header>
       <article class="article">
-        <header class="article-header">
-          <h2 class="title">The Basic Language of the Web: HTML</h2>
+        <header class="post-header">
+          <h2>The Basic Language of the Web: HTML</h2>
           <img
-            class="author-image"
-            src="/img/laura-jones.jpg"
-            alt="Woman looking serious with a hat on"
-            width="50"
+            src="img/laura-jones.jpg"
+            alt="Headshot of Laura Jones"
             height="50"
+            width="50"
+            class="author-img"
           />
           <p class="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
           </p>
           <img
-            class="html-image"
-            src="/img/post-img.jpg"
-            width="500"
+            src="img/post-img.jpg"
             alt="HTML code on a screen"
+            width="500"
+            height="200"
+            class="post-img"
           />
+          <button>❤️ Like</button>
         </header>
         <p>
           All modern websites and web applications are built using three
           <em>fundamental</em>
-          technologies: HTML, CSS, and JavaScript. These are the languages of
-          the web.
+          technologies: HTML, CSS and JavaScript. These are the languages of the
+          web.
         </p>
         <p>
           In this post, let's focus on HTML. We will learn what HTML is all
@@ -60,8 +62,8 @@
           understand HTML and render HTML code as websites.
         </p>
         <p>In HTML, each element is made up of 3 parts:</p>
-        <ol class="html-parts-list">
-          <li>The opening tag</li>
+        <ol>
+          <li class="first-li">The opening tag</li>
           <li>The closing tag</li>
           <li>The actual element</li>
         </ol>
@@ -78,11 +80,13 @@
           There are countless reasons for learning the fundamental language of
           the web. Here are 5 of them:
         </p>
-        <ul class="reasons-for-learning-list">
-          <li>To be able to use the fundamental web dev language</li>
+        <ul>
+          <li class="first-li">
+            To be able to use the fundamental web dev language
+          </li>
           <li>
             To hand-craft beautiful websites instead of relying on tools like
-            Wordpress or Wix
+            Worpress or Wix
           </li>
           <li>To build web applications</li>
           <li>To impress friends</li>
@@ -91,29 +95,43 @@
         <p>Hopefully you learned something new here. See you next time!</p>
       </article>
       <aside class="aside">
-        <h4>Related Posts</h4>
-        <ul class="related-posts">
+        <h4>Related posts</h4>
+        <ul class="related">
           <li>
-            <img src="/img/related-1.jpg" width="75" alt="Man typing code" />
+            <img
+              src="img/related-1.jpg"
+              alt="Person programming"
+              width="75"
+              height="75"
+            />
             <a href="#">How to Learn Web Development</a>
             <p class="related-author">By Jonas Schmedtmann</p>
           </li>
           <li>
-            <img src="/img/related-2.jpg" width="75" alt="Lightning bolt" />
+            <img
+              src="img/related-2.jpg"
+              alt="Lightning"
+              width="75"
+              height="75"
+            />
             <a href="#">The Unknown Powers of CSS</a>
             <p class="related-author">By Jim Dillon</p>
           </li>
           <li>
-            <img src="/img/related-3.jpg" width="75" alt="Screen with code" />
+            <img
+              src="img/related-3.jpg"
+              alt="JavaScript code on a screen"
+              width="75"
+              height="75"
+            />
             <a href="#">Why JavaScript is Awesome</a>
             <p class="related-author">By Matilda</p>
           </li>
         </ul>
       </aside>
       <footer class="footer">
-        <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
+        <p class="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
       </footer>
     </div>
-    <button class="like-button">❤ Like</button>
   </body>
 </html>

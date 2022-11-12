@@ -1,12 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     border: 5px solid #000;
-    width: 825px;
+    width: 800px;
     margin: 50px auto;
+}
+
+.content {
+    position: relative;
 }
 
 .article {
@@ -27,20 +32,36 @@
     padding: 5px 10px;
 }
 
+.challenge-image {
+    width: 225px;
+}
+
 .product-price {
     font-weight: bold;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 30px;
 }
 
 .product-shipping {
+    display: inline-block;
     font-size: 12px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    margin-bottom: 15px;
+}
+
+.more-information {
+    margin-bottom: 15px;
 }
 
 .more-information a {
     color: #000;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .more-information a:hover {
@@ -50,7 +71,7 @@
 .colors div {
     display: inline-block;
     margin-right: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .color-one {
@@ -127,4 +148,21 @@
     border: none;
     cursor: pointer;
     border-top: 4px solid black;
+}
+
+.image-container {
+    float: left;
+    margin-right: 30px;
+    width: 225px;
+    height: 225px;
+}
+
+.content-left {
+    float: left;
+    width: 225px;
+}
+
+.content-right {
+    width: 225px;
+    float: right;
 }
